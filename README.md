@@ -57,6 +57,8 @@ A high-level dashboard combining key metrics, execution ratios, pass/fail statis
 
 ## 📊 Comprehensive Testing Dashboard
 
+<sub>
+  
 | Metric | Value | Percentage | Feature Tested | Test Cases Number | Passed | Failed | Status / Result |
 | :--- | :---: | :---: | :--- | :---: | :---: | :---: | :--- |
 | **Total Test Cases Planned** | 89 | 100% | **Authentication** | 17 | 16 | 1 | 🔴 FAILED (Hold) |
@@ -68,8 +70,7 @@ A high-level dashboard combining key metrics, execution ratios, pass/fail statis
 | **Medium Bugs** | 4 | -- | | | | | |
 | **Low Bugs** | 0 | -- | | | | | |
 
-🛑 **Final Quality Gate Verdict:** **RELEASE HOLD** — The build cannot be deployed to production due to 1 Critical and 5 High severity bugs pending developer resolution.
-
+</sub>
 ---
 
 ## 📂 Repository Structure
