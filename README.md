@@ -19,7 +19,10 @@ The objective of this project is to perform end-to-end manual testing on the Ora
 ## 📊 Project Artifacts
 
 ### 1️⃣ Test Cases
-A comprehensive set of 89 test cases divided by features to ensure maximum test coverage.
+A comprehensive set of test cases divided by features to ensure maximum test coverage.
+
+🟢 Click Here to View the Full Live Google Sheet (All Features) https://docs.google.com/spreadsheets/d/1cFOsZXKNAsAAug7JS4JopjPVP3i3RycegJGBG4Ng8Mo/edit?usp=sharing
+
 📂 Quick Previews on GitHub (Tab-separated CSV Files):
 * [Authentication Test Cases](OrangeHRM%20Manual%20Testing%20Project%20-%20Authentication.csv)
 * [Forgot Password Test Cases](OrangeHRM%20Manual%20Testing%20Project%20-%20Forget%20password%20%281%29.csv)
