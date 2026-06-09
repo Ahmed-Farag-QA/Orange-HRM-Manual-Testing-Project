@@ -24,18 +24,25 @@ A comprehensive set of test cases divided by features to ensure maximum test cov
 🟢 Click Here to View the Full Live Google Sheet (All Features) https://docs.google.com/spreadsheets/d/1cFOsZXKNAsAAug7JS4JopjPVP3i3RycegJGBG4Ng8Mo/edit?usp=sharing
 
 📂 Quick Previews on GitHub (Tab-separated CSV Files):
-* [Authentication Test Cases](OrangeHRM%20Manual%20Testing%20Project%20-%20Authentication.csv)
-* [Forgot Password Test Cases](OrangeHRM%20Manual%20Testing%20Project%20-%20Forget%20password%20%281%29.csv)
-* [PIM - Add Employee Test Cases](OrangeHRM%20Manual%20Testing%20Project%20-%20PIM-%20Add%20Employee%20%281%29.csv)
-* [PIM - Employee List & Search Test Cases](OrangeHRM%20Manual%20Testing%20Project%20-%20PIM%20-%20Employee%20List.csv)
-* [PIM - Reports Test Cases](OrangeHRM%20Manual%20Testing%20Project%20-%20PIM%20-%20Reports.csv)
+
+- [Authentication Test Cases (Login & Logout)](Test%20Cases/Authentication_Login_Logout.csv)
+- [Forgot Password Test Cases](Test%20Cases/Forgot_Password.csv)
+- [PIM - Add Employee Test Cases](Test%20Cases/PIM_Add_Employee.csv)
+- [PIM - Employee List Test Cases](Test%20Cases/PIM_Employee_List.csv)
+- [PIM - Reports Test Cases](Test%20Cases/PIM_Reports.csv)
+
 
 ### 2️⃣ Bug Reports
-Detailed defect reports documented with clear steps to reproduce, actual vs. expected results, severity, and environment.
-* [Click Here to View the Bug Report File](OrangeHRM%20Manual%20Testing%20Project%20-%20Bug%20Report.csv)
+
+📂 GitHub Preview:
+
+🔴 [Click Here to View Bug Reports](Bug%20Reports/Bug_Report.csv)
+
 
 ### 3️⃣ Test Execution Summary
-A high-level dashboard combining key metrics, execution ratios, pass/fail statistics, and bug severity tracking.
+
+📂 GitHub Preview:
+
 * [Click Here to View the Test Summary Report File](OrangeHRM%20Manual%20Testing%20Project%20-%20Test%20Summary%20Report.csv)
 
 ---
