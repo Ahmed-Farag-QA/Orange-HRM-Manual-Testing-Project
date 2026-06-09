@@ -43,16 +43,20 @@ A high-level dashboard combining key metrics, execution ratios, pass/fail statis
 ```text
 OrangeHRM-Manual-Testing-Project
 │
-├── 📄 OrangeHRM Manual Testing Project - Authentication.csv
-├── 📄 OrangeHRM Manual Testing Project - Forget password (1).csv
-├── 📄 OrangeHRM Manual Testing Project - PIM- Add Employee (1).csv
-├── 📄 OrangeHRM Manual Testing Project - PIM - Employee List.csv
-├── 📄 OrangeHRM Manual Testing Project - PIM - Reports.csv
-├── 📄 OrangeHRM Manual Testing Project - Bug Report.csv
-├── 📄 OrangeHRM Manual Testing Project - Test Summary Report.csv
-└── 📜 README.md
-
----
+├── Test Cases
+│   ├── Authentication_Login_Logout.csv
+│   ├── Forgot_Password.csv
+│   ├── PIM_Add_Employee.csv
+│   ├── PIM_Employee_List.csv
+│   └── PIM_Reports.csv
+│
+├── Bug Reports
+│   └── Bug_Report.csv
+│
+├── Test Summary Report
+│   └── Test_Summary_Report.csv
+│
+└── README.md
 ```
 
 ## 🛠️ Testing Techniques Applied
