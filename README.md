@@ -1,6 +1,6 @@
 # 🧪 OrangeHRM - Manual Testing Project
 
-This repository contains a comprehensive manual testing suite for the OrangeHRM web application (Open-Source Demo). The project demonstrates the application of software testing methodologies to ensure the application's functionality, usability, and reliability across core human resource management workflows.
+This repository contains a comprehensive manual testing suite for the OrangeHR Managment System web application (Open-Source Demo). The project demonstrates the application of software testing methodologies to ensure the application's functionality, usability, and reliability across core human resource management workflows.
 
 ---
 
