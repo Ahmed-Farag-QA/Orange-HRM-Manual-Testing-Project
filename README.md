@@ -8,12 +8,10 @@ This repository contains a comprehensive manual testing suite for the OrangeHRM 
 
 The objective of this project is to perform end-to-end manual testing on the OrangeHRM platform. Testing focused on critical user journeys, administrative security, edge cases, and UI/UX validation to identify defects, enforce data integrity, and ensure a seamless user experience.
 
-## 🔍 Scope of Testing
 
 ## 🔍 Scope of Testing
 
-** Authentication Module (Login & Logout)**
-Verifying session timeouts, cross-tab behavior, invalid credentials handling, and secure logouts.
+** Authentication Module (Login & Logout)** Verifying session timeouts, cross-tab behavior, invalid credentials handling, and secure logouts.
 
 ** Forgot Password Feature**
 Validating security links, username existence checks, error messaging, and input criteria (special characters/spaces).
