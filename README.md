@@ -55,24 +55,6 @@ A high-level dashboard combining key metrics, execution ratios, pass/fail statis
 
 ---
 
-## 📊 Comprehensive Testing Dashboard
-
-<small>
-  
-| Metric | Value | Percentage | Feature Tested | Test Cases Number | Passed | Failed |
-| :--- | :---: | :---: | :--- | :---: | :---: | :---: |
-| Total Test Cases Planned | 89 | 100% | Authentication | 17 | 16 | 1 | 
-| Total Test Cases Executed | 89 | 100% | Forgot Password | 10 | 8 | 2 | 
-| Total Test Cases Passed | 79 | 88.76% | PIM - Add Employee | 42 | 35 | 7 | 
-| Total Test Cases Failed | 10 | 11.24% | PIM - Employee List | 12 | 12 | 0 |
-| Critical Bugs | 1 | -- | PIM - Reports | 8 | 8 | 0 | 🟢 PASSED |
-| High Bugs | 5 | -- | 
-| Medium Bugs | 4 | -- | | | | | |
-| **Low Bugs** | 0 | -- | | | | | |
-
-</small>
----
-
 ## 📂 Repository Structure
 
 ```text
