@@ -11,20 +11,21 @@ The objective of this project is to perform end-to-end manual testing on the Ora
 
 ## 🔍 Scope of Testing
 
-**Authentication Module (Login & Logout)**
-Verifying session timeouts, cross-tab behavior, invalid credentials handling, and secure logouts.
+**🔐 Authentication Module (Login & Logout)**
+<br>Verifying session timeouts, cross-tab behavior, invalid credentials handling, and secure logouts.
 
-**Forgot Password Feature**
-Validating security links, username existence checks, error messaging, and input criteria (special characters/spaces).
+**🔑 Forgot Password Feature**
+<br>Validating security links, username existence checks, error messaging, and input criteria (special characters/spaces).
 
-**PIM - Add Employee**
-Testing strict data validation rules on mandatory fields, profile picture uploads, unique Employee ID generation, and "Create Login Details" logic.
+**👤 PIM - Add Employee**
+<br>Testing strict data validation rules on mandatory fields, profile picture uploads, unique Employee ID generation, and "Create Login Details" logic.
 
-**PIM - Employee List & Search**
-Verifying complex filtering using multiple criteria (Employee Name, ID, Job Title, Sub Unit) and Autocomplete hints.
+**📋 PIM - Employee List & Search**
+<br>Verifying complex filtering using multiple criteria (Employee Name, ID, Job Title, Sub Unit) and Autocomplete hints.
 
-**PIM - Reports**
-Validating the behavior of system-defined pre-loaded reports, custom report queries, search resets, and record counts.
+**📊 PIM - Reports**
+<br>Validating the behavior of system-defined pre-loaded reports, custom report queries, search resets, and record counts.
+
 
 ## 📊 Project Artifacts
 
