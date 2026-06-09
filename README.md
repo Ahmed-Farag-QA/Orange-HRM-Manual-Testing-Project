@@ -60,7 +60,7 @@ A high-level dashboard combining key metrics, execution ratios, pass/fail statis
 <small>
   
 | Metric | Value | Percentage | Feature Tested | Test Cases Number | Passed | Failed |
-| :--- | :---: | :---: | :------ | :---: | :---: | :---: |
+| :--- | :---: | :---: | :--- | :---: | :---: | :---: |
 | Total Test Cases Planned | 89 | 100% | Authentication | 17 | 16 | 1 | 
 | Total Test Cases Executed | 89 | 100% | Forgot Password | 10 | 8 | 2 | 
 | Total Test Cases Passed | 79 | 88.76% | PIM - Add Employee | 42 | 35 | 7 | 
