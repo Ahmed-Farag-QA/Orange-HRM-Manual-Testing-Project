@@ -50,23 +50,19 @@ A comprehensive set of test cases divided by features to ensure maximum test cov
 
 ## 📂 Repository Structure
 
+## 📂 Repository Structure
+
 ```text
 OrangeHRM-Manual-Testing-Project
 │
-├── Test Cases
-│   ├── Authentication_Login_Logout.csv
-│   ├── Forgot_Password.csv
-│   ├── PIM_Add_Employee.csv
-│   ├── PIM_Employee_List.csv
-│   └── PIM_Reports.csv
-│
-├── Bug Reports
-│   └── Bug_Report.csv
-│
-├── Test Summary Report
-│   └── Test_Summary_Report.csv
-│
-└── README.md
+├── 📄 Authentication_Login_Logout.csv
+├── 📄 Forgot_Password.csv
+├── 📄 PIM_Add_Employee.csv
+├── 📄 PIM_Employee_List.csv
+├── 📄 PIM_Reports.csv
+├── 📄 Bug_Report.csv
+├── 📄 Test_Summary_Report.csv
+└── 📜 README.md
 ```
 
 ## 🛠️ Testing Techniques Applied
