@@ -25,11 +25,11 @@ A comprehensive set of test cases divided by features to ensure maximum test cov
 
 📂 Quick Previews on GitHub (Tab-separated CSV Files):
 
-- [Authentication Test Cases (Login & Logout)](Test%20Cases/Authentication_Login_Logout.csv)
-- [Forgot Password Test Cases](Test%20Cases/Forgot_Password.csv)
-- [PIM - Add Employee Test Cases](Test%20Cases/PIM_Add_Employee.csv)
-- [PIM - Employee List Test Cases](Test%20Cases/PIM_Employee_List.csv)
-- [PIM - Reports Test Cases](Test%20Cases/PIM_Reports.csv)
+- [Authentication Test Cases (Login & Logout)](Authentication_Login_Logout.csv)
+- [Forgot Password Test Cases](Forgot_Password.csv)
+- [PIM - Add Employee Test Cases](PIM_Add_Employee.csv)
+- [PIM - Employee List Test Cases](PIM_Employee_List.csv)
+- [PIM - Reports Test Cases](PIM_Reports.csv)
 
 
 ### 2️⃣ Bug Reports
