@@ -57,7 +57,7 @@ A high-level dashboard combining key metrics, execution ratios, pass/fail statis
 
 ## 📊 Comprehensive Testing Dashboard
 
-<sub>
+<small>
   
 | Metric | Value | Percentage | Feature Tested | Test Cases Number | Passed | Failed | Status / Result |
 | :--- | :---: | :---: | :--- | :---: | :---: | :---: | :--- |
@@ -70,7 +70,7 @@ A high-level dashboard combining key metrics, execution ratios, pass/fail statis
 | **Medium Bugs** | 4 | -- | | | | | |
 | **Low Bugs** | 0 | -- | | | | | |
 
-</sub>
+</small>
 ---
 
 ## 📂 Repository Structure
