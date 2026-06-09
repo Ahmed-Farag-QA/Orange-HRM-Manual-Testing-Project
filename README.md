@@ -43,7 +43,7 @@ A comprehensive set of test cases divided by features to ensure maximum test cov
 
 📂 GitHub Preview:
 
-* [Click Here to View the Test Summary Report File](OrangeHRM%20Manual%20Testing%20Project%20-%20Test%20Summary%20Report.csv)
+* [Click Here to View the Test Summary Report File](OrangeHRM%20Manual%20Testing%20Project%20-%20Test%20Summary%20/Test_Summary_Report.csv)
 
 ---
 
