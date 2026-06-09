@@ -1,0 +1,299 @@
+Test Case ID,Test Case Title,Pre-conditions,Test Steps,Test Data,Expected Result,Status
+TC-028,Verify redirection to PIM page after clicking on PIM button,user is on dashboard page,1- click on PIM button from the left sidebar,,user is redirected to PIM page,Pass
+TC-029,Verify that PIM button is visible in the left sidebar after successful login,user is logged on and in dashboard page,1- observe appearing PIM button in the left sidebar,,PIM button is visible and displayed correctly in the left sidebar menu,Pass
+TC-030,Verify adding a new employee successfully when providing valid data in all mandatory fields,user is on add employee page,"1- enter valid data in all mandatory fields
+2- click save button","first name: omar
+middle name: ahmed
+last name: sayed
+employee id: 47589","the employee is saved successfully, and the system automatically redirects to the 'Personal Details' tab of the new employee",Pass
+TC-031,Verify error message when entering an already existing Employee ID,user is on add employee page,"1- enter valid first name
+2- enter valid middle name
+3- enter valid last name
+4- enter an existed ID 
+5- click save button","first name: omar
+middle name: ahmed
+last name: sayed
+employee id: 47589","an error message is displayed ""employee Id already exists""",Pass
+TC-032,Verify adding a new employee successfully when providing valid data in all mandatory fields with valid profile picture,user is on add employee page,"1- enter valid data in all mandatory fields
+2- click the + icon and upload a valid image.
+3- click save button","first name: omar
+middle name: ahmed
+last name: sayed
+employee id: 47589","the employee is saved successfully along with the profile picture, and the system automatically redirects to the 'Personal Details' tab of the new employee",Pass
+TC-033,Verify that an error message is displayed when uploading a profile picture with an invalid extension,user is on add employee page,"1- enter valid data in all mandatory fields
+2- click the + icon and upload a non-image file (e.g., PDF or TXT).
+3- click save button","first name: ali
+middle name: ahmed
+last name: sayed
+employee id: 47589","an error message is displayed""invalid type file""",Pass
+TC-034,Verify that an error message is displayed when uploading a profile picture larger than 1MB,user is on add employee page,"1- enter valid data in all mandatory fields
+2- click the + icon and upload an image file that exceeds 1MB 
+3- click save button","first name: mahmoud
+middle name: ahmed
+last name: sayed
+employee id: 47589","an error message is displayed""the file size exceeds the maximum allowed limit of 1MB""",Pass
+TC-035,Verify that an error message is displayed when providing invalid data in all mandatory fields,user is on add employee page,"1- enter invalid data in all mandatory fields
+2- click save button","first name: 12@#
+middle name: %$w
+last name: 4567
+employee id: **&^","an error message is displayed""invalid data""",Fail
+TC-036,Verify that an error message is displayed when entering invalid first name,user is on add employee page,"1- enter invalid first name
+2- enter valid middle name
+3- enter valid last name
+4- enter valid employee ID
+5- click save button","first name: (*)(7
+middle name: ahmed
+last name: sayed
+employee id: 47659","an error message is displayed""invalid data""",Fail
+TC-037,Verify that an error message is displayed when entering invalid middle name,user is on add employee page,"1- enter valid first name
+2- enter invalid middle name
+3- enter valid last name
+4- enter valid employee ID
+5- click save button","first name: omar
+middle name: &^%
+last name: sayed
+employee id: 47589","an error message is displayed""invalid data""",Fail
+TC-038,Verify that an error message is displayed when entering invalid last name,user is on add employee page,"1- enter valid first name
+2- enter valid middle name
+3- enter invalid last name
+4- enter valid employee ID
+5- click save button","first name: omar
+middle name: ahmed
+last name: 4657
+employee id: 47589","an error message is displayed""invalid data""",Fail
+TC-039,Verify that an error message is displayed when entering invalid ID,user is on add employee page,"1- enter valid first name
+2- enter valid middle name
+3- enter valid last name
+4- enter invalid employee ID
+5- click save button","first name: omar
+middle name: ahmed
+last name: sayed
+employee id: jhkj","an error message is displayed""invalid data""",Fail
+TC-040,Verify that an error message is displayed when leaving all required fields empty,user is on add employee page,"1- leave all required fields empty
+2- click save button","first name: empty
+middle name: empty
+last name: empty
+employee id: empty","an error message is displayed ""required fields",Pass
+TC-041,Verify that an error message is displayed when leaving first name field empty,user is on add employee page,"1- leave first name empty
+2- enter valid middle name
+3- enter valid last name
+4- enter invalid employee ID
+5- click save button","first name: empty
+middle name: ahmed
+last name: sayed
+employee id: 96321","an error message is displayed ""required field",Pass
+TC-042,Verify that a new user is created successfully when leaving middle name field empty,user is on add employee page,"1- enter valid first name
+2- leave valid middle name empty
+3- enter valid last name
+4- enter invalid employee ID
+5- click save button","first name: hamza
+middle name: empty
+last name: sayed
+employee id: 12580",a new user is created successfully,Pass
+TC-043,Verify that an error message is displayed when leaving last name field empty,user is on add employee page,"1- enter valid first name
+2- enter valid middle name 
+3- leave last name empty
+4- enter invalid employee ID
+5- click save button","first name: ibrahim
+middle name: ahmed
+last name: empty
+employee id: 63482","an error message is displayed ""required field",Pass
+TC-044,Verify that an error message is displayed when leaving ID field empty,user is on add employee page,"1- enter valid first name
+2- enter valid middle name 
+3- enter valid last name 
+4- leave employee ID empty
+5- click save button","first name: ahmed
+middle name: ahmed
+last name: sayed
+employee id: empty","an error message is displayed ""required field",Fail
+TC-045,Verify that clicking 'Cancel' aborts the operation and does not save data,user is on add employee page,"1- enter valid first name
+2- enter valid middle name
+3- enter valid last name
+4- enter invalid employee ID
+5- click cancel button","first name: ibrahim
+middle name: ahmed
+last name: sayed
+employee id: 47589","the creation process is canceled, no data is saved to the database, and the user is redirected back to the Employee List page.",Pass
+TC-046,Verify adding a new employee when creating login details and providing valid data in all fields,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username.
+3. keep 'Status' selected as 'Enabled'.
+4. enter a strong password and match it in 'Confirm Password'.
+5. click Save.","username: abo elsayed
+password: test@1234
+confirm password: test@1234
+",the employee and their login account are created successfully with active access permissions.,Pass
+TC-047,Verify an error message is displayed when creating login details and providing invalid data in all fields,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter an invalid username.
+3. keep 'Status' selected as 'Enabled'.
+4. enter an invalid password and match it in 'Confirm Password'.
+5. click Save.","username: a@#
+password: test
+confirm password: test
+",an error message is displayed,Pass
+TC-048,Verify an error message is displayed when creating login details and providing numbers in username,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter an invalid username.
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: 123456
+password: test@123
+confirm password: test@123
+",an error message is displayed,Fail
+TC-049,Verify an error message is displayed when creating login details and providing username with 4 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter a username with 4 characters.
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: mona
+password: test@123
+confirm password: test@123
+","an error message is displayed ""Should be at least 5 characters""",Pass
+TC-050,Verify adding a new employee when creating login details and providing username with 5 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter a username with 6 characters.
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: ahmed
+password: test@123
+confirm password: test@123
+",the employee and their login account are created successfully with active access permissions.,Pass
+TC-051,Verify an error message is displayed when creating login details and providing username with 6 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter a username with 6 characters.
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: nasser
+password: test@123
+confirm password: test@123
+",the employee and their login account are created successfully with active access permissions.,Pass
+TC-052,Verify an error message is displayed when creating login details and providing username with 39 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter a username with 39 characters.
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: 39 characters
+password: test@123
+confirm password: test@123
+","an error message is displayed ""Should not exceed 40 characters""",Pass
+TC-053,Verify adding a new employee when creating login details and providing username with 40 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter a username with 40 characters.
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: 40 characters
+password: test@123
+confirm password: test@123
+",the employee and their login account are created successfully with active access permissions.,Pass
+TC-054,Verify an error message is displayed when creating login details and providing username with 41 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter a username with 39 characters.
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: 41 characters
+password: test@123
+confirm password: test@123
+","an error message is displayed ""Should not exceed 40 characters""",Pass
+TC-055,Verify system behavior when providing username included spaces,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter username included spaces
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: marawan
+password: test@123
+confirm password: test@123
+",system should ignore the long spaces,Pass
+TC-056,Verify an error message is displayed when leaving username field empty,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. leave username empty
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: empty
+password: test@123
+confirm password: test@123
+","an error message is displayed ""required""",Pass
+TC-057,Verify an error message is displayed when leaving all login fields empty,"valid data is entered in first name, middle name, last name and id employee fields","1- toggle 'Create Login Details' to ON.
+2- leave all login fields empty.
+3- click Save.",,"an error message is displayed ""required""",Pass
+TC-058,Verify an error message is displayed when creating login details and providing invalid password,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter an invalid username.
+3. keep 'Status' selected as 'Enabled'.
+4. enter valid password and match it in 'Confirm Password'.
+5. click Save.","username: ahmed
+password: //fyb
+confirm password: //&fyb
+",an error message is displayed,Pass
+TC-059,Verify an error message is displayed when creating login details and providing password with 6 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username
+3. keep 'Status' selected as 'Enabled'.
+4. enter invalid password and match it in 'Confirm Password'.
+5. click Save.","username: monaa
+password: 6 characters
+confirm password: 6 characters
+","an error message is displayed ""Should be at least 7 characters""",Pass
+TC-060,Verify adding a new employee when creating login details and providing password with 7 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username
+3. keep 'Status' selected as 'Enabled'.
+4. enter invalid password and match it in 'Confirm Password'.
+5. click Save.","username: ahmed
+password: 7 characters
+confirm password: 7 characters
+",the employee and their login account are created successfully with active access permissions.,Pass
+TC-061,Verify an error message is displayed when creating login details and providing password with 8 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username
+3. keep 'Status' selected as 'Enabled'.
+4. enter invalid password and match it in 'Confirm Password'.
+5. click Save.","username: ahmed
+password: 8 characters
+confirm password:  8 characters
+",the employee and their login account are created successfully with active access permissions.,Pass
+TC-062,Verify an error message is displayed when creating login details and providing password with 63 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username
+3. keep 'Status' selected as 'Enabled'.
+4. enter invalid password and match it in 'Confirm Password'.
+5. click Save.","username: ahmed
+password: 63 characters
+confirm password:  63 characters
+",the employee and their login account are created successfully with active access permissions.,Pass
+TC-063,Verify adding a new employee when creating login details and providing username with 64 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username
+3. keep 'Status' selected as 'Enabled'.
+4. enter invalid password and match it in 'Confirm Password'.
+5. click Save.","username: ahmed
+password: 64 characters
+confirm password: 64 characters",the employee and their login account are created successfully with active access permissions.,Pass
+TC-064,Verify an error message is displayed when creating login details and providing username with 65 characters,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username
+3. keep 'Status' selected as 'Enabled'.
+4. enter invalid password and match it in 'Confirm Password'.
+5. click Save.","username: ahmed
+password: 65 characters
+confirm password: 65 characters","an error message is displayed ""Should not exceed 64 characters""",Pass
+TC-065,Verify an error message is displayed when leaving password field empty,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username
+3. keep 'Status' selected as 'Enabled'.
+4. leave password field empty.
+5. click Save.","username: ahmed
+password: empty
+confirm password: test@123
+","an error message is displayed ""Passwords do not match""",Pass
+TC-066,Verify an error message is displayed when leaving confirm password field empty,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username
+3. keep 'Status' selected as 'Enabled'.
+4. leave confirm password field empty.
+5. click Save.","username: ahmed
+password: test@123 
+confirm password: empty
+","an error message is displayed ""Passwords do not match""",Pass
+TC-067,Verify system behavior when providing password included spaces,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter username included spaces
+3. keep 'Status' selected as 'Enabled'.
+4. enter an valid password and match it in 'Confirm Password'.
+5. click Save.","username: marawan
+password: test@123
+confirm password: test@123
+","an error message is displayed ""Your password should not contain spaces""",Pass
+TC-068,Verify system behavior when using copy - paste functionality in confirm password field,"valid data is entered in first name, middle name, last name and id employee fields","1- enter valid password in password field
+2- copy the password
+3- paste it in the confirm password field","username: marawan
+password: test@123
+confirm password: test @123
+","an error message is displayed ""Passwords do not match""",Pass
+TC-069,Verify successfully creating an employee with Disabled login credentials,"valid data is entered in first name, middle name, last name and id employee fields","1. toggle 'Create Login Details' to ON.
+2. enter valid username.
+3. select 'Disabled' status radio button.
+4. enter a strong password and match it in 'Confirm Password'.
+5. click Save.","username: abo el sayed
+password: test@1234
+confirm password: test@1234
+","The account is saved successfully, but the login status it marked as Disabled, meaning the user won't be able to log in.",Pass

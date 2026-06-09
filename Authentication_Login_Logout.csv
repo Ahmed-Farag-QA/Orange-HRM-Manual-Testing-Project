@@ -1,0 +1,112 @@
+Test Case ID,Test Case Title,Pre-conditions,Test Steps,Test Data,Expected Result,Status
+TC-001,Verify that the user is redirected to the dashboard page when providing valid credentials,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid username
+3- enter valid password
+4- click login button","username: Admin
+
+password: admin123",user is logged in successfully and redirected to the dashboard page,Pass
+TC-002,Verify that navigating to internal URLs without an active session redirects to the مogin page.,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid username
+3- enter valid password
+4- click login button
+5- copy the URL of the dashboard page.
+6- open Edge browser and paste the URL.","username: Admin
+
+password: admin123","the user is redirected to the login page on Edge browser,",Pass
+TC-003,Verify that the an appropriate message is displayed when providing invalid credentials,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter invalid username
+3- enter invalid password
+4- click login button","username: asf
+
+pasword: abc","login is failed and an error message is displayed
+""Invalid credentials""
+",Pass
+TC-004,Verify that the an appropriate message is displayed when providing invalid username,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter invalid username
+3- enter invalid password
+4- click login button","username: ght
+
+password: admin123","login is failed and an error message is displayed
+""Invalid credentials""
+",Pass
+TC-005,Verify that the an appropriate message is displayed when providing invalid password,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter invalid username
+3- enter invalid password
+4- click login button","username: Admin
+
+password: uyp 88","login is failed and an error message is displayed
+""Invalid credentials""
+",Pass
+TC-006,Verify that the an appropriate message is displayed when leaving all fields empty,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- leave username field empty
+3- leave password field empty
+4- click login button","username: empty
+
+password: empty
+","login is failed and an error message is displayed
+""Invalid credentials"" and ""required"" word under each field
+",Pass
+TC-007,Verify that the an appropriate message is displayed when leaving username field empty,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- leave username field empty
+3- lenter valid password
+4- click login button","username: empty
+
+password: admin123
+","login is rejected and an appropriate error message is displayed
+""required"" word under username field
+",Pass
+TC-008,Verify that the an appropriate message is displayed when leaving password field empty,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid username
+3- leave password field empty
+4- click login button","username: Admin
+
+password: empty
+","login is rejected and an appropriate error message is displayed
+""required"" word under password field
+",Pass
+TC-009,Verify that the user can login using different letter cases in the username field,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid username with different letter cases
+3- enter valid password
+4- click login button","username: AdmiN
+
+password: admin123",user is logged in successfully and redirected to the dashboard page,Pass
+TC-010,Verify that the user can login using different letter cases in the password field,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid username 
+3- enter valid password with different letter cases
+4- click login button","username: Admin
+
+password: aDMin
+",user is logged in successfully and redirected to the home page,Fail
+TC-011,Verify that the user can login when the username contains trailing spaces,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid username with trailing spaces
+3- enter valid password 
+4- click login button","username: Admin    
+
+password: admin123
+",user is logged in successfully and redirected to the dashboard page,Pass
+TC-012,Verify that the user can't login when the password contains trailing spaces,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid username 
+3- enter valid password with trailing spaces
+4- click login button","username: Admin    
+
+password: admin123  
+",user is logged in successfully and redirected to the dashboard page,Pass
+TC-013,Verify that login fails when the username contains leading spaces,user is on login page,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid username with leading spaces
+3- enter valid password
+4- click login button","username:   Admin    
+
+password: admin123  
+",user is logged in successfully and redirected to the dashboard page,Pass
+TC-014,Verify that clicking the 'Logout' button successfully terminates the session,user is on  the dashboard page,"1- click on the user profile dropdown (top right).
+2- click on the Logout button.",,The user is successfully logged out and redirected to the Login page.,Pass
+TC-015,Verify that log out from one browser tab invalidates the session across all other active tabs,user is on  the dashboard page on browser Tab 1.,"1- right-click on any menu item (e.g., 'Add Employee') and select ""Open link in new tab"" (Tab 2).
+2- on Tab 2, click on the user profile icon and select Logout.
+3- go back to Tab 1 and try to perform any action (e.g., click 'Search' or 'Employee List').",,"the system detects the session is terminated, blocks the action on Tab 1, and automatically redirects the user to the Login page.",Pass
+TC-016,Verify that clicking the browser's 'Back' button after logging out does not restore the session,user is on  the dashboard page,"1- click on the user profile dropdown (top right).
+2- click on the Logout button.
+3- click on the browser's Back arrow button.
+4- try to perform any action on the dashboard page",,the system prevents access and the user is redirected to login page,Pass
+TC-017,Verify that copying the dashboard URL and pasting it after logging out denies access,user is on  the dashboard page,"1- copy the dashboard's link
+2- click logout.
+3- paste the copied URL into the browser address bar and click enter.",,the system denies unauthorized access and automatically redirects the user back to the Login page.,Pass

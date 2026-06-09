@@ -1,0 +1,18 @@
+Test Case ID,Test Case Title,Pre-conditions,Test Steps,Test Data,Expected Result,Status
+TC-082,Verify toggling the Collapse/Expand arrow hides and shows the search panel,user is on reports page,"1- click on the up-arrow icon on the right side of 'Employee Reports' bar.
+2- observe the search form.
+3- click the same arrow icon again.",,the search section collapses and expands and becomes completely hidden and visible.,Pass
+TC-083,Verify that default pre-defined reports are loaded and counted correctly,user is on reports page,1- observe the table and the total records counter below the search panel.,,"the table displays the pre-defined reports, and the text shows exactly (4) Records Found.",Pass
+TC-084,Verify searching for a report for a valid name,user is on reports page,"1- enter a valid report name in report name field
+2- select the report from the dropdown list.
+3- click search.",report name: employee job details,the table updates to display only the selected report.,Pass
+TC-085,Verify clicking 'Reset' clears the search field and restores all reports,user is on reports page,"1- type any text in 'Report Name' and click search.
+2- click Reset button.",,"the search field is cleared, and the table displays all 4 default records again.",Pass
+TC-086,Verify that an error message is displayed when entering invalid name in report name field,user is on reports page,"1- enter invalid report name in report name field
+2- click search",report name: financial report,an error message is displayed,Pass
+TC-087,Verify that the system displays the generated report data page when clicking the document icon for a specific report,user is on reports page,"1- locate any report row (e.g., Employee Job Details).
+2- click on the document icon on the right side of the row.",,the system displays the generated report data page,Pass
+TC-088,Verify that the user is redirected to the configuration page when clicking on edit icon,user is on reports page,"1- locate any report row (e.g., Employee Job Details).
+2- click on the edit icon on the right side of the row.",,the user is redirected to the configuration page,Pass
+TC-089,Verify that a confirmation pop-up message is displayed when clicking the delete icon for a specific report,user is on reports page,"1- locate any report row (e.g., Employee Job Details).
+2- click on the delete icon on the right side of the row.",,"a confirmation message is displayed ""The selected record will be permanently deleted. Are you sure you want to continue?""",Pass

@@ -1,0 +1,72 @@
+Test Case ID,Bug ID,Bug Title,Description,Steps to Reproduce,Expected Result,Actual Result,Environment,Severity,Attachments
+TC-010,BUG-001,password field doesn't accept different letter cases,,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid username 
+3- enter valid password with different letter cases
+4- click login button",user is logged in successfully and redirected to the home page,"user can't login an error message is displayed ""Invalid credentials""
+
+
+",Chrome,High,
+TC-023,BUG-002,an invalid username is accepted when reset password and no error message is displayed,,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- click forgot password button
+3- enter invalid username ""one character""
+4- click reset password button","system shows error message ""username not found""",user is redirected to confirmation reset password page and a confirmation reset password message is displayed,Chrome,High,
+TC-027,BUG-003,special characters is accepted in username when reset password and no error message is displayed,,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- click forgot password button
+3- enter invalid username ""special characters""
+4- click reset password button","an error message is displayed""invalid data""",user is redirected to confirmation reset password page and a confirmation reset password message is displayed,Chrome,High,
+TC-035,BUG-004,a new employee is created successfully after entering invalid data in all fields,,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid data in all login fields
+3- click PIM button from the left sidebar
+4- enter invalid first name
+5- enter invalid middle name
+6- enter invalid last name
+7- enter invalid employee ID
+8- click save button""","an error message is displayed""invalid data""",user is created successfully and no error message is displayed,Chrome,Critical,
+TC-036,BUG-005,The employee is saved successfully with mixed Arabic and English characters in first name field,,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid data in all login fields
+3- click PIM button from the left sidebar
+4- enter invalid first name ""arabic and english""
+5- enter valid middle name
+6- enter valid last name
+7- enter valid employee ID
+8- click save button""","an error message is displayed""invalid data""",user is created successfully and no error message is displayed,Chrome,Medium,
+TC-037,BUG-006,The employee is saved successfully with mixed Arabic and English characters in middle name field,,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid data in all login fields
+3- click PIM button from the left sidebar
+4- enter valid first name
+5- enter invalid middle name ""arabic and english""
+6- enter valid last name
+7- enter valid employee ID
+8- click save button""","an error message is displayed""invalid data""",user is created successfully and no error message is displayed,Chrome,Medium,
+TC-038,BUG-007,a new employee is created successfully after entering invalid last name,,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid data in all login fields
+3- click PIM button from the left sidebar
+4- enter valid first name
+5- enter valid middle name
+6- enter invalid last name ""arabic and english""
+7- enter valid employee ID
+8- click save button""","an error message is displayed""invalid data""",user is created successfully and no error message is displayed,Chrome,High,
+TC-039,BUG-008,a new employee is created successfully after entering invalid ID,,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid data in all login fields
+3- click PIM button from the left sidebar
+4- enter valid first name
+5- enter valid middle name
+6- enter valid last name
+7- enter invalid employee ID ""arabic and english""
+8- click save button""","an error message is displayed""invalid data""",user is created successfully and no error message is displayed,Chrome,High,
+TC-044,BUG-009,a new employee is created successfully with empty ID,,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid data in all login fields
+3- click PIM button from the left sidebar
+4- enter valid first name
+5- enter valid middle name
+6- enter valid last name
+7- leave employee ID empty
+8- click save button""","an error message is displayed""required""",user is created successfully and no error message is displayed,Chrome,High,
+TC-048,BUG-010,"Username field in ""Create Login Details"" incorrectly accepts numeric-only values.",,"1- navigate to https://opensource-demo.orangehrmlive.com
+2- enter valid data in all login fields
+3- click PIM button from the left sidebar
+4- toggle 'Create Login Details' to ON.
+5- enter an invalid username.""numeric""
+6- keep 'Status' selected as 'Enabled'.
+7- enter an valid password and match it in 'Confirm Password'.
+8- click Save.""","an error message is displayed""invalid data""",user is created successfully and no error message is displayed,Edge,Medium,

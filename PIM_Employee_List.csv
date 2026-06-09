@@ -1,0 +1,32 @@
+Test Case ID,Test Case Title,Pre-conditions,Test Steps,Test Data,Expected Result,Status
+TC-070,Verify search functionality using employee name (Autocomplete hint),user is on employee list page,"1- enter the first few letters of an existing employee's name in 'Employee Name' field.
+2- select the full name from the dropdown hint.
+3- click search button.",employee name: Ahm -> select Ahmed Farag,The system filters the table and displays only the record matching the selected employee name.,Pass
+TC-071,Verify search functionality using valid employee ID,user is on employee list page,"1- enter valid employee ID
+2- click search button",employee ID: 422621,The system filters the table and displays only the record matching the selected employee ID.,Pass
+TC-072,Verify search functionality using employee status dropdown,user is on employee list page,"1- click on ""Employee Status"" dropdown
+2- select a status
+3- click search button",employee status: e.g. freelancer,The system filters the table and displays only the record matching the selected employee status.,Pass
+TC-073,Verify search functionality using employee supervisor name,user is on employee list page,"1- enter supervisor name
+2- click search button",supervisor name: ahmed,The system filters the table and displays only the record matching the selected supervisor name.,Pass
+TC-074,Verify search functionality using job title dropdown,user is on employee list page,"""1- click on """"Job Title"""" dropdown
+2- select a job title
+3- click search button""",job title: QA engineer,The system filters the table and displays only the record matching the selected job title.,Pass
+TC-075,Verify search functionality using sub unit dropdown,user is on employee list page,"""1- click on """"Sub Unit"""" dropdown
+2- select a sub unit
+3- click search button""",sub unit: administration,The system filters the table and displays only the record matching the selected sub unit.,Pass
+TC-076,Verify behavior system when combining search using multiple filters at once,user is on employee list page,"1- enter a valid employee name.
+2- select a job title.
+3- select a sub unit.
+4- click search button.","Name: Ahmed Farag
+Job Title: QA Engineer
+Sub Unit: IT",The system filters the table and displays only the records matching the selected options.,Pass
+TC-077,Verify that clicking 'Reset' clears all search filters and restores default view,user is on employee list page,"1- fill out multiple filters (Name, ID, Job Title).
+2- click reset button.",,All search input fields are cleared.,Pass
+TC-078,Verify that clicking the '+ Add' button redirects to the add employee page,user is on employee list page,1- click add button,,user is redirected to the add employee page,Pass
+TC-079,Verify that an error message is displayed when searching with invalid employee name,user is on employee list page,"1- enter invalid employee name
+2- click search button",employee name: invalid name,"an error message is displayed ""no records found""",Pass
+TC-080,Verify that an error message is displayed when searching with invalid employee ID,user is on employee list page,"1- enter invalid employee ID
+2- click search button",employee ID: invalid ID,"an error message is displayed ""no records found""",Pass
+TC-081,Verify that an error message is displayed when searching with invalid employee supervisor name,user is on employee list page,"1- enter invalid supervisor name
+2- click search button",supervisor name: invalid,"an error message is displayed ""no records found""",Pass
